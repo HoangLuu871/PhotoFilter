@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cropTool"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_medium_16sp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <TextView
+        android:id="@+id/cropCloseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/dimen_medium_16sp"
+        android:paddingBottom="@dimen/dimen_medium_16sp"
+        app:drawableBottomCompat="@drawable/ic_close_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cropSquareBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:drawablePadding="@dimen/dimen_small_8sp"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/dimen_medium_16sp"
+        android:paddingBottom="@dimen/dimen_medium_16sp"
+        android:text="@string/crop_square"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:drawableBottomCompat="@drawable/ic_crop_square_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cropLandscapeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawablePadding="@dimen/dimen_small_8sp"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/dimen_medium_16sp"
+        android:paddingBottom="@dimen/dimen_medium_16sp"
+        android:text="@string/crop_landscape"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:drawableBottomCompat="@drawable/ic_crop_landscape_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cropPortraitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:drawablePadding="@dimen/dimen_small_8sp"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/dimen_medium_16sp"
+        android:paddingBottom="@dimen/dimen_medium_16sp"
+        android:text="@string/crop_portrait"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:drawableBottomCompat="@drawable/ic_crop_portrait_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/cropSaveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:paddingHorizontal="@dimen/dimen_medium_16sp"
+        android:paddingBottom="@dimen/dimen_medium_16sp"
+        app:drawableBottomCompat="@drawable/ic_check_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</LinearLayout>

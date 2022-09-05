@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/svEffect"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/dimen_medium_16sp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <TextView
+        android:id="@+id/effectCloseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingBottom="@dimen/dimen_large_32sp"
+        app:drawableBottomCompat="@drawable/ic_close_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    -
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_large_32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/effectAcceptBtn"
+        app:layout_constraintStart_toStartOf="@id/effectCloseBtn">
+
+
+        -
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_medium_16sp"
+            android:orientation="horizontal">
+
+
+            -
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/effect_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/default_effect" />
+
+                <ImageView
+                    android:id="@+id/effect_default_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/dimen_small_4sp"
+                    android:src="@drawable/ic_block_24" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/effect_invert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/invert_effect" />
+
+                <ImageView
+                    android:id="@+id/effect_invert_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/effect_invert" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/effect_greyscale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/greyscale_effect" />
+
+                <ImageView
+                    android:id="@+id/effect_greyscale_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/effect_greyscale" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/effect_gamma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/gamma_effect" />
+
+                <ImageView
+                    android:id="@+id/effect_gamma_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/effect_gamma" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/effect_contrast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/contrast_effect" />
+
+                <ImageView
+                    android:id="@+id/effect_contrast_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/effect_contrast" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/effect_flea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/flea_effect" />
+
+                <ImageView
+                    android:id="@+id/effect_flea_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/effect_flea" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/effect_gaussian_blur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/gaussian_blur_effect" />
+
+                <ImageView
+                    android:id="@+id/effect_gaussian_blur_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/effect_gaussian_blur" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/effect_round_corner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/round_corner_effect" />
+
+                <ImageView
+                    android:id="@+id/effect_round_corner_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/effect_round_corner" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/effect_sepia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/sepia_effect" />
+
+                <ImageView
+                    android:id="@+id/effect_sepia_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/effect_sepia" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/effect_sepiaG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/sepiaG_effect" />
+
+                <ImageView
+                    android:id="@+id/effect_sepiaG_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/effect_sepia_g" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/effect_sepiaB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/sepiaB_effect" />
+
+                <ImageView
+                    android:id="@+id/effect_sepiaB_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/effect_sepia_b" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/effect_smooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/smooth_effect" />
+
+                <ImageView
+                    android:id="@+id/effect_smooth_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/effect_smooth" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/effect_tint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/tint_effect" />
+
+                <ImageView
+                    android:id="@+id/effect_tint_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/effect_tint" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/effectAcceptBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingBottom="@dimen/dimen_large_32sp"
+        app:drawableBottomCompat="@drawable/ic_check_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

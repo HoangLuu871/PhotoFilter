@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_small_2sp">2sp</dimen>
+    <dimen name="dimen_small_4sp">4sp</dimen>
+    <dimen name="dimen_small_8sp">8sp</dimen>
+    <dimen name="dimen_medium_16sp">16sp</dimen>
+    <dimen name="dimen_medium_24sp">24sp</dimen>
+    <dimen name="dimen_large_32sp">32sp</dimen>
+    <dimen name="dimen_large_64sp">72sp</dimen>
+    <dimen name="dimen_large_128sp">128sp</dimen>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/HoangApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/HoangApp/app/src/main/res/drawable/ic_add_photo.xml" value="0.1" />
+        <entry key="..\:/HoangApp/app/src/main/res/drawable/ic_brightness_24.xml" value="0.1325" />
+        <entry key="..\:/HoangApp/app/src/main/res/drawable/ic_check_24.xml" value="0.1325" />
+        <entry key="..\:/HoangApp/app/src/main/res/drawable/ic_check_36.xml" value="0.1325" />
+        <entry key="..\:/HoangApp/app/src/main/res/drawable/ic_collage_24.xml" value="0.1" />
+        <entry key="..\:/HoangApp/app/src/main/res/drawable/ic_contrast_24.xml" value="0.1325" />
+        <entry key="..\:/HoangApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/HoangApp/app/src/main/res/drawable/ic_shape_24.xml" value="0.1165" />
+        <entry key="..\:/HoangApp/app/src/main/res/drawable/seek_thumb.xml" value="0.1" />
+        <entry key="..\:/HoangApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/HoangApp/app/src/main/res/layout/brightness.xml" value="0.12284701114488349" />
+        <entry key="..\:/HoangApp/app/src/main/res/layout/contrast.xml" value="0.12284701114488349" />
+        <entry key="..\:/HoangApp/app/src/main/res/layout/effectes.xml" value="0.22395833333333334" />
+        <entry key="..\:/HoangApp/app/src/main/res/layout/filter.xml" value="0.2" />
+        <entry key="..\:/HoangApp/app/src/main/res/layout/filters.xml" value="0.2" />
+        <entry key="..\:/HoangApp/app/src/main/res/layout/flip.xml" value="0.1" />
+        <entry key="..\:/HoangApp/app/src/main/res/layout/toolbar.xml" value="0.2" />
+        <entry key="..\:/HoangApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+        <entry key="..\:/Users/SVMC/Downloads/HoangApp/HoangApp/app/src/main/res/drawable/ic_crop_portrait_24.xml" value="0.1" />
+        <entry key="..\:/Users/SVMC/Downloads/HoangApp/HoangApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1175" />
+        <entry key="..\:/Users/SVMC/Downloads/HoangApp/HoangApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/SVMC/Downloads/HoangApp/HoangApp/app/src/main/res/layout/crop.xml" value="0.12183383991894631" />
+        <entry key="..\:/Users/SVMC/Downloads/HoangApp/HoangApp/app/src/main/res/layout/effects.xml" value="0.1" />
+        <entry key="..\:/Users/SVMC/Downloads/HoangApp/HoangApp/app/src/main/res/layout/filters.xml" value="0.1" />
+        <entry key="..\:/Users/SVMC/Downloads/HoangApp/HoangApp/app/src/main/res/layout/toolbar.xml" value="0.1" />
+        <entry key="..\:/Users/SVMC/Downloads/HoangApp/HoangApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1175" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

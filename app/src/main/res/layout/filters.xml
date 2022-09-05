@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/svFilter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/dimen_medium_16sp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <TextView
+        android:id="@+id/filterCloseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingBottom="@dimen/dimen_large_32sp"
+        app:drawableBottomCompat="@drawable/ic_close_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    -
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_large_32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/filterAcceptBtn"
+        app:layout_constraintStart_toStartOf="@id/filterCloseBtn">
+
+
+        -
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_medium_16sp"
+            android:orientation="horizontal">
+
+
+            -
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/filter_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/default_effect" />
+
+                <ImageView
+                    android:id="@+id/filter_default_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/dimen_small_4sp"
+                    android:src="@drawable/ic_block_24" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            -
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/filter_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/black_filter" />
+
+                <ImageView
+                    android:id="@+id/filter_black_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/dimen_small_4sp"
+                    android:src="@drawable/filter_black" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            -
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/filter_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/red_filter" />
+
+                <ImageView
+                    android:id="@+id/filter_red_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/dimen_small_4sp"
+                    android:src="@drawable/filter_red" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            -
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/filter_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/green_filter" />
+
+                <ImageView
+                    android:id="@+id/filter_green_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/dimen_small_4sp"
+                    android:src="@drawable/filter_green" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            -
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/filter_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/blue_filter" />
+
+                <ImageView
+                    android:id="@+id/filter_blue_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/dimen_small_4sp"
+                    android:src="@drawable/filter_blue" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            -
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/filter_hue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/hue_filter" />
+
+                <ImageView
+                    android:id="@+id/filter_hue_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/dimen_small_4sp"
+                    android:src="@drawable/filter_hue" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            -
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/filter_saturation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/saturation_filter" />
+
+                <ImageView
+                    android:id="@+id/filter_saturation_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/dimen_small_4sp"
+                    android:src="@drawable/filter_saturation" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            -
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/filter_shading_cyan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/cyan_filter" />
+
+                <ImageView
+                    android:id="@+id/filter_shading_cyan_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/dimen_small_4sp"
+                    android:src="@drawable/filter_cyan" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            -
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/filter_shading_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/yellow_filter" />
+
+                <ImageView
+                    android:id="@+id/filter_shading_yellow_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/dimen_small_4sp"
+                    android:src="@drawable/filter_yellow" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/filter_shading_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_small_8sp"
+                app:cardElevation="0sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/green2_filter" />
+
+                <ImageView
+                    android:id="@+id/filter_shading_green_thumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dimen_medium_24sp"
+                    android:adjustViewBounds="true"
+                    android:padding="@dimen/dimen_small_4sp"
+                    android:src="@drawable/filter_green2" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/filterAcceptBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingBottom="@dimen/dimen_large_32sp"
+        app:drawableBottomCompat="@drawable/ic_check_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
